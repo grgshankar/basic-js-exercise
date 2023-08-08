@@ -27,5 +27,20 @@
 // }
 
 // 3. Write a JavaScript program to get the current date.
-const date = new Date();
-console.log(date);
+// const date = new Date();
+// console.log(date);
+
+// 4. Write a JavaScript program to calculate multiplication and division of two numbers.(use same function to achieve this)
+// this function is for the multiplications
+const multiply = (a, b) => {
+  return a * b;
+};
+const multiplication = multiply(2, 2);
+console.log("Multiplication of two integer is =", multiplication);
+
+// this function is for the division
+const divide = (a, b) => {
+  return a / b;
+};
+const division = divide(6, 3);
+console.log("Division of two integer is = ", division);
