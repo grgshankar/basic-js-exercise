@@ -32,15 +32,33 @@
 
 // 4. Write a JavaScript program to calculate multiplication and division of two numbers.(use same function to achieve this)
 // this function is for the multiplications
-const multiply = (a, b) => {
-  return a * b;
-};
-const multiplication = multiply(2, 2);
-console.log("Multiplication of two integer is =", multiplication);
+// const multiply = (a, b) => {
+//   return a * b;
+// };
+// const multiplication = multiply(2, 2);
+// console.log("Multiplication of two integer is =", multiplication);
 
-// this function is for the division
-const divide = (a, b) => {
-  return a / b;
+// // this function is for the division
+// const divide = (a, b) => {
+//   return a / b;
+// };
+// const division = divide(6, 3);
+// console.log("Division of two integer is = ", division);
+
+// 5. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+//    `[ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ]`
+
+// - Expected Output :
+// - 60°C is 140 °F
+// - 45°F is 7.222222222222222°C
+
+// 6. Write a JavaScript program to count the number of vowels in a given string.
+const words =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
+//   function to count the vowels string
+const fnVowels = (words) => {
+  // using regex to store the array of matched vowels
+  const filterVowels = words.match(/[aeiou]/gi);
+  console.log(filterVowels);
 };
-const division = divide(6, 3);
-console.log("Division of two integer is = ", division);
+fnVowels(words);
