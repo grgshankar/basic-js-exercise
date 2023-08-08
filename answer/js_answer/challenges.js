@@ -19,9 +19,13 @@
 // }
 
 // 2. Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
-const positiveNumber = prompt("Enter any positive number");
-if (positiveNumber % 3 === 0 || positiveNumber % 7 === 0) {
-  alert("the number you have enter is of multiple 3 or the 7");
-} else {
-  alert("The number you have entered is neither of multiple 3 or 7 ");
-}
+// const positiveNumber = prompt("Enter any positive number");
+// if (positiveNumber % 3 === 0 || positiveNumber % 7 === 0) {
+//   alert("the number you have enter is of multiple 3 or the 7");
+// } else {
+//   alert("The number you have entered is neither of multiple 3 or 7 ");
+// }
+
+// 3. Write a JavaScript program to get the current date.
+const date = new Date();
+console.log(date);
