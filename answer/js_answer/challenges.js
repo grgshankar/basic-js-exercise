@@ -59,6 +59,6 @@ const words =
 const fnVowels = (words) => {
   // using regex to store the array of matched vowels
   const filterVowels = words.match(/[aeiou]/gi);
-  console.log(filterVowels);
+  console.log("vowels are", filterVowels);
 };
 fnVowels(words);
