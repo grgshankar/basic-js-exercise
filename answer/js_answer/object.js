@@ -44,16 +44,23 @@
 // console.log(sortedCars);
 
 // Exercise find the largest country based on character count
-const countries = ["India", "United States of Amercia", "Nepal", "China"];
-let countriesIndex = 0;
-countries.map((country, index) => {
-  // comparing each element by it's index number
-  if (country.length > countries[countriesIndex].length) {
-    countriesIndex = index;
-  }
-});
-console.log("The largest countries name is ", countries[countriesIndex]);
+// const countries = ["India", "United States of Amercia", "Nepal", "China"];
+// let countriesIndex = 0;
+// countries.map((country, index) => {
+//   // comparing each element by it's index number
+//   if (country.length > countries[countriesIndex].length) {
+//     countriesIndex = index;
+//   }
+// });
+// console.log("The largest countries name is ", countries[countriesIndex]);
 
 // const name = "monkey d. luffy";
 // output => Monkey D. Luffy
 // using string method
+
+const firstLetterCapital = (str) => {
+  return str.replace(/\b\w/g, (C) => C.toUpperCase());
+};
+const name = "monkey d. luffy";
+const convertedString = firstLetterCapital(name);
+console.log(convertedString);

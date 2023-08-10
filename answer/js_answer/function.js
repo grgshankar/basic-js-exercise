@@ -9,8 +9,8 @@
 //    Example x = 32243;
 //    Expected Output : 34223
 
-// const reversesFn = (inputNumbers) => {
-//   return inputNumbers.reverse();
-// };
-// const numbersWrap = reversesFn([3, 2, 2, 4, 3]);
-// console.log(numbersWrap);
+const reversesFn = (inputNumbers) => {
+  return inputNumbers.reverse();
+};
+const numbersWrap = reversesFn([3, 2, 2, 4, 3]);
+console.log(numbersWrap);
