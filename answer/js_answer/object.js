@@ -58,9 +58,24 @@
 // output => Monkey D. Luffy
 // using string method
 
-const firstLetterCapital = (str) => {
-  return str.replace(/\b\w/g, (C) => C.toUpperCase());
+// const firstLetterCapital = (str) => {
+//   return str.replace(/\b\w/g, (C) => C.toUpperCase());
+// };
+// const name = "monkey d. luffy";
+// const convertedString = firstLetterCapital(name);
+// console.log(convertedString);
+
+// 2. a. Find the value of the price property and if it is greater than 100, discount it by 10%. If that’s not the case, discount it by 7%.
+//    b. Update the object with the new property - discount and the corresponding value (7% or 10%) and the new price.
+
+let discount;
+const priceProperty = (price) => {
+  if (price > 100) {
+    const discountCal = price / 100;
+    return (discount = discountCal * 10);
+  } else {
+    // discount = (price / 100) * 7;
+  }
 };
-const name = "monkey d. luffy";
-const convertedString = firstLetterCapital(name);
-console.log(convertedString);
+const discountRate = priceProperty(200);
+console.log(discountRate);

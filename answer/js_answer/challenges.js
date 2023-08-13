@@ -52,13 +52,27 @@
 // - 60°C is 140 °F
 // - 45°F is 7.222222222222222°C
 
-// 6. Write a JavaScript program to count the number of vowels in a given string.
-const words =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
-//   function to count the vowels string
-const fnVowels = (words) => {
-  // using regex to store the array of matched vowels
-  const filterVowels = words.match(/[aeiou]/gi);
-  console.log("vowels are", filterVowels);
+const temperature = (c, f) => {
+  if (f) {
+    const c = (5 * (f - 32)) / 9;
+    return `The celcius temp is ${c}`;
+  } else if (c != 0) {
+    const f = (9 * c + 32) / 5;
+    return `The farenheit temp is ${f}`;
+  } else {
+    return null;
+  }
 };
-fnVowels(words);
+
+console.log(temperature(0, 100));
+
+// 6. Write a JavaScript program to count the number of vowels in a given string.
+// const words =
+//   "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
+// //   function to count the vowels string
+// const fnVowels = (words) => {
+//   // using regex to store the array of matched vowels
+//   const filterVowels = words.match(/[aeiou]/gi);
+//   console.log("vowels are", filterVowels);
+// };
+// fnVowels(words);
