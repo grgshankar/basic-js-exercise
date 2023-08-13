@@ -19,10 +19,29 @@
 //    Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
 //    Example string : 'The quick brown fox'
 //    Expected Output : 5
-const vowelWord = "The quick brown fox";
-const checkVowelFn = (vowelWord) => {
-  const filterVowels = vowelWord.match(/[aeiou]/gi);
-  const lengthOfVowels = filterVowels.length;
-  console.log("The total number of Vowels =", lengthOfVowels);
+// const vowelWord = "The quick brown fox";
+// const checkVowelFn = (vowelWord) => {
+//   const filterVowels = vowelWord.match(/[aeiou]/gi);
+//   const lengthOfVowels = filterVowels.length;
+//   console.log("The total number of Vowels =", lengthOfVowels);
+// };
+// checkVowelFn(vowelWord);
+
+// 3. Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not.
+
+let num = prompt("Enter any number to check whether it is prime or not");
+const checkPrime = (num) => {
+  if (num === 1) {
+    return false;
+  } else if (num === 2) {
+    return true;
+  } else {
+    for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 };
-checkVowelFn(vowelWord);
+console.log(checkPrime(num));
